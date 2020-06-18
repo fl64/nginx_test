@@ -6,8 +6,8 @@ services:
     build: .
     #entrypoint: ["/bin/sh","-c","sleep infinity"]
     environment:
-    - NGINX_TEST_PORT=8080
-    - NGINX_TEST_MSG="test message!"
+    - TEST_NGINX_PORT=8080
+    - TEST_NGINX_MSG=test message!
     restart: always
     ports:
     - 8080:8080

@@ -23,7 +23,7 @@ http {
 		server_name _;
 		location / {
 			default_type  text/plain;
-			return 200 {{ TEST_NGINX_MSG }}\n;
+			return 200 '{{ TEST_NGINX_MSG }}\n';
 		}
 	}
 	include /etc/nginx/conf.d/*.conf;
