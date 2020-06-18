@@ -15,4 +15,3 @@ RUN chmod +x /entrypoint.sh && \
 ENTRYPOINT ["/entrypoint.sh"]
 
 LABEL maintainer="fl64 <flsixtyfour@gmail.com>"
-LABEL version="0.0.0"
