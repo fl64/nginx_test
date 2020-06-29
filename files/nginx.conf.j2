@@ -22,9 +22,10 @@ http {
 		listen {{ TEST_NGINX_PORT | default(8080) }} default_server;
 		server_name _;
 		location / {
-			default_type  text/plain;
-			return 200 '{{ TEST_NGINX_MSG }}\n';
-		}
+                root   /var/www/html/;
+                index  index.html;
+        }
+
 	}
 	include /etc/nginx/conf.d/*.conf;
 }
