@@ -1,15 +1,15 @@
 <html>
 <head>
-    <title>{{ TEST_NGINX_MSG }}</title>
+    <title>{{ TEST_MSG }}</title>
 <style>
 body {
-  background-color: {{ TEST_NGINX_BC | default("white") }};
-  color: {{ TEST_NGINX_TC | default("black") }};
+  background-color: {{ TEST_BC | default("white") }};
+  color: {{ TEST_TC | default("black") }};
 }
 </style>
 </head>
 <body>
-<h1>{{ TEST_NGINX_MSG }}</h1>
-{{ TEST_NGINX_INFO }}
+<h1>{{ TEST_MSG }}</h1>
+{{ TEST_INFO }}
 </body>
 </html>

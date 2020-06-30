@@ -1,7 +1,7 @@
 FROM alpine:3.12
 
-ENV NGINX_TEST_PORT=8080 \
-    NGINX_TEST_WORKDIR=/etc/nginx
+ENV TEST_PORT=8080 \
+    TEST_WORKDIR=/etc/nginx
 COPY files/* /
 RUN chmod +x /entrypoint.sh && \
     apk add --update --no-cache nginx curl openssl py-pip && \

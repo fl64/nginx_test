@@ -6,9 +6,10 @@ services:
     build: .
     #entrypoint: ["/bin/sh","-c","sleep infinity"]
     environment:
-    - TEST_NGINX_PORT=8080
-    - TEST_NGINX_MSG=test message!
-    - TEST_NGINX_BC=lightblue
+    - TEST_PORT=8080
+    - TEST_MSG=test message!
+    - TEST_BC=lightblue
+    - TEST_TC=green
     restart: always
     ports:
     - 8080:8080
