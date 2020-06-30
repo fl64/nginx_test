@@ -5,5 +5,5 @@ Simple nginx docker image for testing reverse proxy.
 
 Params:
 
-`TEST_MSG` - message to show
-`TEST_PORT` - service port
+`T1_MSG` - message to show
+`T1_PORT` - service port

@@ -14,7 +14,7 @@ events {
 http {
 	access_log /dev/stdout;
 	server {
-		listen {{ TEST_PORT | default(8080) }} default_server;
+		listen {{ T1_PORT | default(8080) }} default_server;
 		server_name _;
 		location / {
                 root   /var/www/html/;
