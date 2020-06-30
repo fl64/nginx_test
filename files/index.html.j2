@@ -1,6 +1,12 @@
 <html>
 <head>
     <title>{{ TEST_NGINX_MSG }}</title>
+<style>
+body {
+  background-color: {{ TEST_NGINX_BC | default("white") }};
+  color: {{ TEST_NGINX_TC | default("black") }};
+}
+</style>
 </head>
 <body>
 <h1>{{ TEST_NGINX_MSG }}</h1>

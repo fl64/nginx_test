@@ -8,6 +8,7 @@ services:
     environment:
     - TEST_NGINX_PORT=8080
     - TEST_NGINX_MSG=test message!
+    - TEST_NGINX_BC=lightblue
     restart: always
     ports:
     - 8080:8080
