@@ -13,4 +13,6 @@ RUN chmod +x /entrypoint.sh && \
 
 ENTRYPOINT ["/entrypoint.sh"]
 
+EXPOSE 8080
+
 LABEL maintainer="fl64 <flsixtyfour@gmail.com>"
